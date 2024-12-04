@@ -37,7 +37,7 @@ function homepageAnimation() {
     .to(
       ".rgt",
       {
-        xPercent: 10,
+        xPercent: -20,
         stagger: 0.03,
         ease: Power4,
       },
@@ -63,8 +63,8 @@ function teamAnimation() {
     el.addEventListener("mousemove", function (dets) {
       gsap.to(this.querySelector(".picture"), {
         opacity: 1,
-        x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
-        y: gsap.utils.mapRange(0, window.innerWidth, -70, 300, dets.clientY),
+        x: gsap.utils.mapRange(0, window.innerWidth, -200, 100, dets.clientX),
+        y: gsap.utils.mapRange(0, window.innerWidth, -70, 150, dets.clientY),
         ease: Power4,
         duration: 0.5,
       });
